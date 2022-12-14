@@ -1,4 +1,4 @@
-![Foto](/img.jpg)
+![Foto](img/img.jpg)
 
 
 ## Butkevich Pavel Aleksandrovich
@@ -40,7 +40,9 @@ while (!Number.isInteger(valueUp)&!Number.isInteger(valueDwn));
 ```
 ## Completed courses
 [Html and CSS Layout Tutorials](https://code.mu/ru/)<br/>
+
 [Tutorial on JS - javascript.ru](https://learn.javascript.ru/)
+
 
 ## Projects on GitHub
 [https://github.com/potopus/rsschool-cv.git](https://github.com/potopus/rsschool-cv.git)
