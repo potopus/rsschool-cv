@@ -1,4 +1,4 @@
-![Foto](/img.jpg)
+![Foto](img/img.jpg)
 
 
 ## Butkevich Pavel Aleksandrovich
