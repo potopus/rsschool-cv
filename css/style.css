@@ -1,0 +1,23 @@
+body{
+     font-family: "Roboto", "Arial", sans-serif;
+}
+
+.my-foto{
+    height: 700px;
+   
+}
+.center-pic{
+    text-align: center;
+}
+section p{
+    font-size: 17px;
+}
+
+.pre-code{
+    font-size: 14px;
+}
+
+.footer{
+    background-color: #08b4c0;
+    height: 300px;
+}
