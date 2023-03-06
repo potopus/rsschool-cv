@@ -7,12 +7,12 @@
 
 ## Butkevich Pavel Aleksandrovich
 
-### 19/06/1980
-**e-mail:** Paveldelo@yandex.ru <br/>
-**tel:** +375 33 305 22 08 <br/>
+###  Date of birth 19/06/1980
+**E-mail:** Paveldelo@yandex.ru <br/>
+**Tel:** +375 33 305 22 08 <br/>
 **GitHub:** [potopus](https://github.com/potopus)<br/>
-**Telegram:** [@PoulBut](https://t.me/PoulBut)
-**LinkeIn:** 
+**Telegram:** [@PoulBut](https://t.me/PoulBut)<br/>
+**LinkeIn:**  [павел-буткевич-46849153](linkedin.com/in/павел-буткевич-46849153)
 
 ***
 
