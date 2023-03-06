@@ -10,7 +10,9 @@
 ### 19/06/1980
 **e-mail:** Paveldelo@yandex.ru <br/>
 **tel:** +375 33 305 22 08 <br/>
-**telegram:** [@PoulBut](https://t.me/PoulBut)
+**GitHub:** [potopus](https://github.com/potopus)<br/>
+**Telegram:** [@PoulBut](https://t.me/PoulBut)
+**LinkeIn:** 
 
 ***
 
@@ -22,13 +24,52 @@ I found and studied all the acquired knowledge from open sources.
 When I found out about the RSSchool courses, I decided to take it and get enough knowledge to acquire a new specialty in the field of JS developer.
 
 
-In March 2023, I completed the preparatory course JS/FE PreSchool 2022Q4 on the portal [https://app.rs.school]. At the end of the course, I have a landing page project and a desktop application, such as [https://momentumdash.com].
-The layout of the site is made on the principle of Perfect Pixel.
-Adaptive design has been applied to the site. In the process, I learned how to position elements using Flex and Grid.
-In the project, I used pseudo-elements and CSS variables, performed responsive design using media queries.
-I expanded the functionality on the site using scripts in the JS programming language.
-When executing the momentum application, the code was structured by modules. To work with the DOM object, I used asynchronous functions. The DOM elements were accessed via the querySelector method.
+In March 2023, I completed the preparatory course JS/FE PreSchool 2022Q4 on the portal [https://app.rs.school]. At the end of the course, I have a landing page project and a desktop application, such as [https://momentumdash.com].<br/>
+During this course I acquired the following skills:
+* The layout of the site is made on the principle of Perfect Pixel.
+* Adaptive design has been applied to the site. In the process, I learned how to position elements using Flex and Grid.
+* In the project, I used pseudo-elements and CSS variables, performed responsive design using media queries.
+* I expanded the functionality on the site using scripts in the JS programming language.
+* When executing the momentum application, the code was structured by modules. To work with the DOM object, I used asynchronous functions. The DOM elements were accessed via the querySelector method.
+
+The following widgets have been developed in the application:
+* Welcome Widget
+* Date and current time widget
+* Widget for loading a random background image according to the time of day
+* Widget for downloading a random quote of the day, which it receives from a JSON file
+* Audio player widget. Has been developed: play/pause track, track listening progress bar, volume control, access to the track list is via JSON.
+* Weather widget. Weather information is obtained through the site's API https://home.openweathermap.org/
+* In the application settings menu, you can remove or add the necessary widget to the screen
+* User data is stored in Local storage.
+
 Links to a brief description of the projects are located in the Completed courses section of my CV.
+
+***
+## Skills
+
+* HTML
+    + tags
+    + attributes
+    + forms
+* CSS
+    + Selectors
+    + Cascadian
+    + Flex
+    + Grid
+* SVG
+    + Sprites
+* JS Core
+    + Functions
+    + Classes
+    + DOM
+    + EventLoop
+    + Async/await
+    + Module
+    + JSON
+* BEM
+* Git
+* Figma
+* Java Core
 
 ***
 
@@ -82,7 +123,8 @@ while (!Number.isInteger(valueUp)&!Number.isInteger(valueDwn));
 
 [https://github.com/potopus/rsschool-cv.git](https://github.com/potopus/rsschool-cv.git)
 
-The projects after comleted JS/FE PreSchool 2022Q4:
+### The projects after comleted JS/FE PreSchool 2022Q4:<br/>
+
 
 The landing page made on the principle of Perfect Pixel. Subject - [Plants](https://rolling-scopes-school.github.io/potopus-JSFEPRESCHOOL2022Q4/plants/ )
 
