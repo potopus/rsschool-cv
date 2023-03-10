@@ -1,23 +1,66 @@
 body{
-     font-family: "Roboto", "Arial", sans-serif;
+    font-family: 'Roboto';
 }
 
-.my-foto{
-    height: 700px;
+a{
+    color:white;
+    text-decoration: none;
+}
+a:hover{
+    color: #cbcbcb;
+    text-decoration: underline;
+}
+
+.wrap {
+    display: flex;
+    max-width: 1200px;
+}
+
+.left-side {
    
+    background-color: #009990;
+    color: #ffffff;
+
+    width: 35%;
 }
-.center-pic{
+
+.left-side,
+.right-side {
+    display: flex;
+    flex-direction: column;
+}
+
+.image {
+    background-image: url('/img/img.jpg');
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    box-sizing: border-box;
+    width: 90%;
+    padding-top: 90%;
+    margin: 5% auto 15%;
+}
+
+.title{
     text-align: center;
+    padding-bottom:5% ;
 }
-section p{
-    font-size: 17px;
+.box-contact{
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 2%;
 }
 
-.pre-code{
-    font-size: 14px;
+.name-contact{
+    width:27%;
+    text-align: end;
 }
 
-.footer{
-    background-color: #08b4c0;
-    height: 300px;
+.hh{
+    font-size: 70%;
+}
+
+.dascription-contact{
+    padding-left: 4%;
 }
