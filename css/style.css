@@ -65,6 +65,11 @@ a:hover {
     font-size: 190%;
 }
 
+.title.contact{
+    margin: 0;
+    font-weight: normal;
+}
+
 .line-left {
     background: #ffffff;
     height: 3px;
