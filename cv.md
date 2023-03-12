@@ -78,7 +78,7 @@ Links to a brief description of the projects are located in the Completed course
 
 ```javascript
 function nearestSq(n){
-    // your code
+    // so, that's my solution
    let i=0,
   valueDwn=0,
   valueUp=0;
