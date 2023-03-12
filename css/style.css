@@ -1,6 +1,6 @@
 html {
     scroll-behavior: smooth;
-    }
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -30,7 +30,7 @@ a:hover {
 .wrap-conteiner {
     padding: 0% 1%;
     padding-bottom: 10%;
-    
+
 }
 
 .left-side {
@@ -61,8 +61,16 @@ a:hover {
 
 .title {
     text-align: center;
-    padding-bottom: 5%;
+    padding-bottom: 1%;
     font-size: 190%;
+}
+
+.line-left {
+    background: #ffffff;
+    height: 3px;
+    width: 80%;
+    margin:0 auto;
+    margin-bottom: 5%;
 }
 
 .box-contact,
@@ -123,8 +131,8 @@ a:hover {
     width: 40%;
 } */
 
-.languages-left-wrap{
- padding: 0;   
+.languages-left-wrap {
+    padding: 0;
 }
 
 /*! RIGHT SIDE */
@@ -187,7 +195,7 @@ li.menu-item {
     padding: 2% 3% 2% 3%;
 }
 
-.skills-description-right > ul {
+.skills-description-right>ul {
     padding-left: 30%;
 }
 
