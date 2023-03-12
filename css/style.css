@@ -1,33 +1,50 @@
-body{
-    font-family: 'Roboto';
+html {
+    scroll-behavior: smooth;
+    }
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #efd09e88;
 }
 
-a{
-    color:white;
+a {
+    color: white;
     text-decoration: none;
 }
-a:hover{
-    color: #cbcbcb;
+
+a:hover {
+    color: #9aff83;
     text-decoration: underline;
 }
 
 .wrap {
     display: flex;
+    flex-wrap: wrap;
     max-width: 1200px;
+    margin: 0 auto;
+    border: 0.5vh solid white;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.wrap-conteiner {
+    padding: 0% 1%;
+    padding-bottom: 10%;
+    
 }
 
 .left-side {
-   
     background-color: #009990;
     color: #ffffff;
-
     width: 35%;
+    border-right: 0.5vh solid white;
 }
 
 .left-side,
 .right-side {
     display: flex;
     flex-direction: column;
+
 }
 
 .image {
@@ -42,25 +59,181 @@ a:hover{
     margin: 5% auto 15%;
 }
 
-.title{
+.title {
     text-align: center;
-    padding-bottom:5% ;
-}
-.box-contact{
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
+    font-size: 190%;
 }
 
-.name-contact{
-    width:27%;
+.box-contact,
+.box-education,
+.box-software,
+.box-sertificats,
+.box-sertificats,
+.box-language {
+    display: flex;
+    flex-direction: row;
+    /* padding: 0% 3% 2%; */
+    font-size: 2.4vh;
+}
+
+
+
+.box-software {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box-software p {
+    display: block;
+    margin: 0px;
+    padding: 0px 2%;
+}
+
+/* .contact-left-wrap {
+    font-size: 150%;
+} */
+
+.name-contact,
+.date-education,
+.date-get-sertificate,
+.name-language {
+    width: 27%;
     text-align: end;
 }
 
-.hh{
+/* .hh{
     font-size: 70%;
+} */
+
+.dascription-contact,
+.description-education,
+.name-sertificate,
+.description-language {
+    padding-left: 4%;
 }
 
-.dascription-contact{
-    padding-left: 4%;
+.box-language {
+    flex-wrap: wrap;
+}
+
+/* .name-language,
+.description-language {
+    width: 40%;
+} */
+
+.languages-left-wrap{
+ padding: 0;   
+}
+
+/*! RIGHT SIDE */
+
+.right-side {
+    width: 64%;
+    color: #009990;
+    margin: 0 auto;
+}
+
+.full-name {
+    width: fit-content;
+    /* height: 50px; */
+    /* color: #009990; */
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 5% 0%;
+    margin: 0 auto;
+    font-size: 240%;
+}
+
+.specialisation {
+    width: fit-content;
+    /* height: 50px; */
+    margin: 0 auto;
+    font-size: 150%;
+}
+
+ul.menu {
+    background: #5c95ff;
+    display: flex;
+    font-size: 1.8vh;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 5%;
+    padding: 0;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+li.menu-item {
+    display: block;
+    margin: 2% 1%;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* background: #75ff56; */
+/* background: #5C95FF; */
+
+.right-title {
+    /* text-decoration: underline; */
+    margin: 0 0 0 5%;
+}
+
+.text-right {
+    color: #000000;
+    backdrop-filter: contrast(1.5);
+    padding: 2% 3% 2% 3%;
+}
+
+.skills-description-right > ul {
+    padding-left: 30%;
+}
+
+.text-right a {
+    color: #392d92;
+}
+
+.text-right a:hover {
+    color: #5c95ff;
+    text-decoration: underline;
+}
+
+.border-deco {
+    width: 100%;
+    height: 2px;
+    margin: 0.3% 0% 0%;
+    background: #5c95ff;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+}
+
+.border-deco.down {
+    margin: 0% 0% 5%;
+}
+
+.footer {
+    background: #392d92;
+    display: flex;
+    justify-content: space-between;
+    padding: 2% 5%;
+    color: #ffffff;
+    border-top: 2px solid #ffffff;
+    width: 100%;
+    font-size: 140%;
+    /* height: 50px; */
+}
+
+.trade-mark,
+.git-hub-link {
+    margin: 0;
+    padding: 0;
+    /* height: 20px; */
+}
+
+.link-rssc {
+    background-image: url("../svg/rsschool.svg");
+    width: 73px;
+    height: 26px;
 }
