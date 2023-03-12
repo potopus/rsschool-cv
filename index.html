@@ -20,12 +20,14 @@
         <!-- <img src="./img/img.jpg" alt=""> -->
       </div>
       <div class="contacts">
-        <div id="contacts" class="title contact">CONTACT</div>
+        <h2 id="contacts" class="title contact">CONTACT</h2>
         <div class="line-left"></div>
         <div class="wrap-conteiner contact-left-wrap">
           <div class="box-contact e-mail">
             <div class="name-contact">E-mail:</div>
-            <div type="e-mail" class="dascription-contact"><a href="mailto:Paveldelo@yandex.ru">Paveldelo@yandex.ru</a></div>
+            <div class="dascription-contact">
+              <a href="mailto:Paveldelo@yandex.ru">Paveldelo@yandex.ru</a>
+            </div>
           </div>
           <div class="box-contact  telephone">
             <div class="name-contact">Tel:</div>
@@ -294,25 +296,25 @@
          <span class="hljs-keyword" style="color: rgb(0, 0, 255);">let</span> i=<span class="hljs-number">0</span>,
         valueDwn=<span class="hljs-number">0</span>,
         valueUp=<span class="hljs-number">0</span>;
-        <span class="hljs-keyword" style="color: rgb(0, 0, 255);">if</span> (<span class="hljs-built_in" style="color: rgb(0, 0, 255);">Number</span>.isInteger(<span class="hljs-built_in" style="color: rgb(0, 0, 255);">Math</span>.sqrt(n))){
+        <span class="hljs-keyword" style="color: rgb(0, 0, 255);">if</span> (<span class="hljs-built-in" style="color: rgb(0, 0, 255);">Number</span>.isInteger(<span class="hljs-built-in" style="color: rgb(0, 0, 255);">Math</span>.sqrt(n))){
           <span class="hljs-comment" style="color: green;">//console.log(n);</span>
           <span class="hljs-keyword" style="color: rgb(0, 0, 255);">return</span> (n);
       }<span class="hljs-keyword" style="color: rgb(0, 0, 255);">else</span> 
         <span class="hljs-keyword" style="color: rgb(0, 0, 255);">do</span>{
-          valueUp=<span class="hljs-built_in" style="color: rgb(0, 0, 255);">Math</span>.sqrt(n+i);
-          valueDwn=<span class="hljs-built_in" style="color: rgb(0, 0, 255);">Math</span>.sqrt(n-i);
-          <span class="hljs-keyword" style="color: rgb(0, 0, 255);">if</span>(<span class="hljs-built_in" style="color: rgb(0, 0, 255);">Number</span>.isInteger(valueUp)){
+          valueUp=<span class="hljs-built-in" style="color: rgb(0, 0, 255);">Math</span>.sqrt(n+i);
+          valueDwn=<span class="hljs-built-in" style="color: rgb(0, 0, 255);">Math</span>.sqrt(n-i);
+          <span class="hljs-keyword" style="color: rgb(0, 0, 255);">if</span>(<span class="hljs-built-in" style="color: rgb(0, 0, 255);">Number</span>.isInteger(valueUp)){
            <span class="hljs-comment" style="color: green;">// console.log(n+i);</span>
             <span class="hljs-keyword" style="color: rgb(0, 0, 255);">return</span> (n+i)
           }<span class="hljs-keyword" style="color: rgb(0, 0, 255);">else</span>
-            <span class="hljs-keyword" style="color: rgb(0, 0, 255);">if</span> (<span class="hljs-built_in" style="color: rgb(0, 0, 255);">Number</span>.isInteger(valueDwn)){
+            <span class="hljs-keyword" style="color: rgb(0, 0, 255);">if</span> (<span class="hljs-built-in" style="color: rgb(0, 0, 255);">Number</span>.isInteger(valueDwn)){
               <span class="hljs-comment" style="color: green;">//console.log(n-i);</span>
               <span class="hljs-keyword" style="color: rgb(0, 0, 255);">return</span> (n-i);
             }
             
           i++;
         }
-      <span class="hljs-keyword" style="color: rgb(0, 0, 255);">while</span> (!<span class="hljs-built_in" style="color: rgb(0, 0, 255);">Number</span>.isInteger(valueUp)&amp;!<span class="hljs-built_in" style="color: rgb(0, 0, 255);">Number</span>.isInteger(valueDwn));
+      <span class="hljs-keyword" style="color: rgb(0, 0, 255);">while</span> (!<span class="hljs-built-in" style="color: rgb(0, 0, 255);">Number</span>.isInteger(valueUp)&amp;!<span class="hljs-built-in" style="color: rgb(0, 0, 255);">Number</span>.isInteger(valueDwn));
       }</pre>
 
 
