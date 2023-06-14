@@ -30,7 +30,8 @@ a:hover {
 .wrap-conteiner {
     padding: 0% 1%;
     padding-bottom: 10%;
-
+    width: 80%;
+    margin: 0 auto;
 }
 
 .left-side {
@@ -38,6 +39,11 @@ a:hover {
     color: #ffffff;
     width: 35%;
     border-right: 0.5vh solid white;
+}
+
+.left-side.full-name,
+.left-side.specialisation {
+    display: none;
 }
 
 .left-side,
@@ -65,7 +71,7 @@ a:hover {
     font-size: 190%;
 }
 
-.title.contact{
+.title.contact {
     margin: 0;
     font-weight: normal;
 }
@@ -74,7 +80,7 @@ a:hover {
     background: #ffffff;
     height: 3px;
     width: 80%;
-    margin:0 auto;
+    margin: 0 auto;
     margin-bottom: 5%;
 }
 
@@ -87,7 +93,8 @@ a:hover {
     display: flex;
     flex-direction: row;
     /* padding: 0% 3% 2%; */
-    font-size: 2.4vh;
+    font-size: 130%;
+    flex-wrap: wrap;
 }
 
 
@@ -112,8 +119,14 @@ a:hover {
 .date-education,
 .date-get-sertificate,
 .name-language {
-    width: 27%;
+    white-space: nowrap;
+    width: fit-content;
     text-align: end;
+    color: #d9d9d9;
+}
+
+.name-language {
+    white-space: nowrap;
 }
 
 /* .hh{
@@ -128,7 +141,7 @@ a:hover {
 }
 
 .box-language {
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 /* .name-language,
@@ -170,6 +183,7 @@ a:hover {
 ul.menu {
     background: #5c95ff;
     display: flex;
+    flex-wrap: wrap;
     font-size: 1.8vh;
     justify-content: space-evenly;
     align-items: center;
@@ -249,4 +263,110 @@ li.menu-item {
     background-image: url("../svg/rsschool.svg");
     width: 73px;
     height: 26px;
+}
+
+@media (max-width:700px) {
+    .wrap {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-side,
+    .right-side {
+        width: 100%;
+        border-right: 0px;
+    }
+
+    .left-side {
+        padding-bottom: 5%;
+    }
+
+    .image {
+        background-size: cover;
+        width: 75%;
+        padding-top: 75%;
+        margin-bottom: 3%;
+    }
+
+    .full-name,
+    .specialisation,
+    ul.menu {
+        display: none;
+    }
+
+    .left-side .full-name,
+    .left-side .specialisation {
+        display: block;
+        color: #ffffff;
+    }
+
+    .box-contact,
+    .box-education,
+    .box-sertificats,
+    .box-sertificats,
+    .box-language {
+        flex-wrap: nowrap;
+    }
+
+    .box-software {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .contact-left-wrap,
+    .languages-left-wrap {
+        margin: 0 auto;
+        /* margin-left: 17vw; */
+    }
+
+    /* .languages-left-wrap,  */
+    .wrap-conteiner {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .name-language {
+
+        width: 40%;
+    }
+
+    .description-language {
+        /* flex-basis: content; */
+        flex-basis: content;
+        width: 120px;
+    }
+
+    /* .box-language>* {
+        /* flex-basis: content; */
+}
+
+*/ .box-contact {
+    /* justify-content: center; */
+}
+
+.left-side .full-name {
+    padding-bottom: 2%;
+}
+
+.left-side .specialisation {
+    text-align: center;
+    padding-bottom: 5%;
+}
+
+.right-side {
+    padding-top: 5%;
+}
+
+.right-title {
+    margin: 0 0 0 0%;
+    text-align: center;
+}
+
+.footer {
+    padding: 3% 0% 3% 0;
+    margin: 0;
+    justify-content: space-around;
+}
 }
