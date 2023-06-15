@@ -120,9 +120,10 @@ a:hover {
 .date-get-sertificate,
 .name-language {
     white-space: nowrap;
-    width: fit-content;
+    /* width:33%; */
     text-align: end;
     color: #d9d9d9;
+    font-size: calc(16px + (20 - 16) * (100vw - 700px) / (1200 - 700));
 }
 
 .name-language {
@@ -138,10 +139,16 @@ a:hover {
 .name-sertificate,
 .description-language {
     padding-left: 4%;
+    font-size: calc(14px + (20 - 14) * (100vw - 700px) / (1200 - 700));
 }
 
 .box-language {
-    flex-wrap: nowrap;
+    /* flex-wrap: nowrap; */
+    width: 100%;
+}
+
+.box-language > *{
+    width: 44%;
 }
 
 /* .name-language,
