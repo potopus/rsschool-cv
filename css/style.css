@@ -28,9 +28,9 @@ a:hover {
 }
 
 .wrap-conteiner {
-    padding: 0% 1%;
+    /* padding: 0% 1%; */
     padding-bottom: 10%;
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
 }
 
@@ -93,7 +93,6 @@ a:hover {
     display: flex;
     flex-direction: row;
     /* padding: 0% 3% 2%; */
-    font-size: 130%;
     flex-wrap: wrap;
 }
 
@@ -123,7 +122,7 @@ a:hover {
     /* width:33%; */
     text-align: end;
     color: #d9d9d9;
-    font-size: calc(16px + (20 - 16) * (100vw - 700px) / (1200 - 700));
+    font-size: clamp(14px, 1.4px + 1.8vi, 23px);
 }
 
 .name-language {
@@ -131,20 +130,26 @@ a:hover {
 }
 
 .wrap-conteiner.contact-left-wrap {
-    padding-right: 5%;
+    /* padding-right: 5%; */
 }
 
-.box-contact {
+.box-contact,
+.box-education,
+.box-sertificats,
+.box-language {
     width: 100%;
+    gap: 10px 6px;
 }
 
-.box-contact>* {
+.box-contact>*,
+.left-side-naming {
     width: 38%;
     align-self: baseline;
 }
 
-.dascription-contact {
-    width: 58%;
+.dascription-contact,
+.left-side-description {
+    width: 59%;
 }
 
 /* .hh{
@@ -160,9 +165,13 @@ a:hover {
 .description-education,
 .name-sertificate,
 .description-language {
-    padding-left: 4%;
-    font-size: calc(14px + (20 - 14) * (100vw - 700px) / (1200 - 700));
+    /* padding-left: 4%; */
+    font-size: clamp(12px, -2px + 2vi, 22px);
 }
+
+/* .box-contact-email--fontsize{
+    font-size: calc(12px + (20 - 14) * (100vw - 700px) / (1200 - 700));
+} */
 
 .box-language {
     /* flex-wrap: nowrap; */
@@ -218,7 +227,7 @@ ul.menu {
     background: #5c95ff;
     display: flex;
     flex-wrap: wrap;
-    font-size: 1.8vh;
+    font-size: clamp(10px, 0px + 1vi, 12px);
     justify-content: space-evenly;
     align-items: center;
     margin-bottom: 5%;
