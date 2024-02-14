@@ -1,3 +1,24 @@
+// определение языка пользователя
+// var lang;
+//     if (window.navigator.userLanguage)
+//         lang = wimdow.navigator.userLanguage;
+//     else if (window.navigator.language)
+//         lang = window.navigator.language;
+//     else
+//         lang = "en"
+//     ;
+
+//     lang = lang.substr(0, 2);
+//     alert(lang);
+
+//     if (lang == 'ru')
+//     {
+//         // do something
+//     }
+
+
+
+
 // фиксация бургера при скроле
 let mainMenu = document.querySelector('.main-menu');
 let burgerBlock = document.querySelector('.burger-block');
