@@ -167,32 +167,41 @@
     </section>
     <section class="right-side">
       <div class="full-name">Pavel Butkevich</div>
-      <div class="specialisation">Junior Frontend Developer / Java Script</div>
+      <h1 class="specialisation">Junior Frontend Developer / Java Script</h1>
       <!-- ! MENU -->
       <!-- TODO make fix position menu on page -->
-      <ul class="menu">
-        <li class="menu-item">
-          <a href="#about"> about me</a>
-        </li>
-        <li class="menu-item">
-          <a href="#tools">SOFTWARE & TOOLS</a>
-        </li>
-        <li class="menu-item">
-          <a href="#education">EDUCATION & SERTIFICATS</a>
-        </li>
-        <li class="menu-item">
-          <a href="#code">Code example</a>
-        </li>
-        <li class="menu-item">
-          <a href="#projects">Projects</a>
-        </li>
-        <li class="menu-item">
-          <a href="#languages">LANGUAGES</a>
-        </li>
-        <li class="menu-item">
-          <a href="#contacts">contacts</a>
-        </li>
-      </ul>
+      <div class="main-menu">
+        <ul class="menu-items">
+          <li class="menu-item">
+            <a href="#about"> about me</a>
+          </li>
+          <li class="menu-item">
+            <a href="#tools">SOFTWARE & TOOLS</a>
+          </li>
+          <li class="menu-item">
+            <a href="#education">EDUCATION & SERTIFICATS</a>
+          </li>
+          <li class="menu-item">
+            <a href="#code">Code example</a>
+          </li>
+          <li class="menu-item">
+            <a href="#projects">Projects</a>
+          </li>
+          <li class="menu-item">
+            <a href="#languages">LANGUAGES</a>
+          </li>
+          <li class="menu-item">
+            <a href="#contacts">contacts</a>
+          </li>
+        </ul>
+        <div class="burger-block visible-mobile" style="">
+          <label class="label-burger" for="check-menu"></label>
+          <input type="checkbox" name="check-menu" id="check-menu" class="check-menu visually-hidden">
+          <div class="burger-icon">
+              <span class="burger__icon-stripe"></span>
+          </div>
+      </div>
+      </div>
       <!-- TODO add icon to right title -->
       <h2 id="about" class="about-right right-title">Briefly About Myself</h2>
       <div class="border-deco"></div>
@@ -467,7 +476,7 @@
     </footer>
   </div>
 
-
+<script src="./js/main.js"></script>
 </body>
 
 </html>
