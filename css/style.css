@@ -1,9 +1,17 @@
 :root {
     --bg-color-main-menu: #5c95ff;
     --bg-color-left-side: #009990;
+    --bg-color-main-alt: #4b61c9;
+    --bg-color-main-dark: #392d92;
     --color-lighter: #ffffff;
+    --color-skill-name: #8b87af;
+    --color-skill-gray: #ececec;
     --burger-top: 138px;
-    --burger-position: "sticky"
+    --burger-position: "sticky";
+    --time-transition: .3s;
+    --element-radius: 10px;
+
+
 }
 
 
@@ -348,12 +356,195 @@ ul.menu-items {
     padding: 2% 3% 2% 3%;
 }
 
+.portfolio-items{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:15px;
+    justify-content: space-between;
+
+}
+
+/* .text-right h3{
+    color: var(--bg-color-main-dark);
+} */
+
+.about-description-right.text-right p {
+    word-wrap: break-word;
+    /* old name */
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    white-space: break-spaces;
+}
+
 .skills-description-right>ul {
     padding-left: 30%;
 }
 
+/* skills */
+
+.skills-list__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 30px;
+    padding: 20px 0px;
+}
+
+.skills-list__item {
+    position: relative;
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.skills-list-item__img svg {
+    width: 50px;
+    aspect-ratio: 1;
+    fill: var(--bg-color-main-menu);
+    opacity: 0.8;
+    transition: fill var(--time-transition);
+
+}
+
+.skills-list__item:hover .skills-list-item__img svg {
+    fill: var(--bg-color-main-alt);
+    transition: fill var(--time-transition);
+}
+
+.skills-list-item__img img {
+    width: 50px;
+    aspect-ratio: 1;
+}
+
+.skills__name {
+    font-weight: 700;
+    opacity: 1;
+    color: var(--bg-color-main-alt);
+}
+
+.tooltip:before {
+    content: attr(data-content);
+    position: absolute;
+    top: calc(100% - 16px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    padding: 16px;
+    border-radius: 4px;
+    background: var(--bg-color-main-dark);
+    color: var(--color-lighter);
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+    z-index: 2;
+    transition: all var(--time-transition) ease-out;
+}
+
+.tooltip:after {
+    content: "";
+    position: absolute;
+    top: calc(100% + 16px);
+    left: 50%;
+    transform: translateY(-50%) rotate(90deg);
+    border: 8px solid var(--bg-color-main-dark);
+    border-color: rgba(0, 0, 0, 0) var(--bg-color-main-dark) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: 0;
+    transition: all var(--time-transition) ease-out;
+}
+
+.tooltip::before,
+.tooltip::after {
+    visibility: hidden;
+}
+
+.tooltip:hover::after {
+    top: calc(100% - 8px);
+    transform: translate(-50%, calc(100% - 16px)) rotate(90deg);
+}
+
+.tooltip:hover::before {
+    top: calc(100% - 16px);
+    transform: translate(-50%, calc(100% - 22px));
+}
+
+.tooltip:hover::before,
+.tooltip:hover::after {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* skills end */
+
+
+/* portfolio */
+
+.portfolio-block h2,
+.portfolio-block h3,
+.portfolio-block h4{
+    margin: 2% 0;
+    padding: 0;
+}
+.portfolio-block h2{
+    margin: 2% 0 2% 5%;
+}
+
+@media screen and (max-width: 700px) {
+    .portfolio-block .right-title{
+        margin: 0;
+    }
+  
+}
+
+.portfolio-item {
+    position: relative;
+    max-width: 320px;
+    background: var(--color-skill-gray);
+    border-radius: var(--element-radius);
+    overflow: hidden;
+    padding: 10px;
+
+}
+
+.portfolio-item__foto {
+    border-radius: var(--element-radius);
+    overflow: hidden;
+    height: 200px;
+    background-color: var(--color-lighter);
+}
+
+.portfolio-item__foto img {
+    transform: scale(1);
+    transition: transform var(--time-transition);
+
+}
+
+.portfolio-item:hover .portfolio-item__foto img {
+    transform: scale(1.05);
+    transition: transform calc( var(--time-transition) + 0.5s);
+
+}
+
+
+.portfolio-item__curtain {
+    display: none;
+    position: absolute;
+}
+
+.technology-image {
+
+    fill: var(--bg-color-main-menu);
+    opacity: .8;
+
+}
+
+/* portfolio end */
+
+
 .text-right a {
     color: #392d92;
+    font-weight: 500;
 }
 
 .text-right a:hover {
@@ -364,18 +555,18 @@ ul.menu-items {
 .border-deco {
     width: 100%;
     height: 2px;
-    margin: 0.3% 0% 0%;
+    margin: 2% 0% 0%;
     background: #5c95ff;
     border-top: 1px solid #ffffff;
     border-bottom: 1px solid #ffffff;
 }
 
 .border-deco.down {
-    margin: 0% 0% 5%;
+    margin: 0% 0% 4%;
 }
 
 .footer {
-    background: #392d92;
+    background: var(--bg-color-main-alt);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -594,51 +785,47 @@ ul.menu-items {
         overflow: hidden;
     }
 
-    .menu-items {
+    .menu-inner {
         position: fixed;
         top: 0px;
         right: -130%;
-        background-color: var(--bg-color-left-side);
+        transition: right 1s;
         width: 100%;
         height: 100vh;
-        color: var(--color-lighter);
         z-index: 4;
-        transition: right 1s;
+        background-color: var(--bg-color-left-side);
+        padding-right: 65px;
+        overflow-y: scroll;
+        color: var(--color-lighter);
+        will-change: transform;
+        /* Добавьте will-change */
+
+    }
+
+    .menu-items {
+        width: 100%;
+        /* height: 100%; */
         font-size: 25px;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         align-items: end;
-        padding-right: 55px;
         padding-top: 80px;
         flex-wrap: nowrap;
-        overflow-y: scroll;
     }
 
-    .menu-items__active {
+    .menu-inner__active {
         right: 0%;
         transition: right 1s;
         overflow-y: scroll;
         scrollbar-width: thin;
         scrollbar-color: var(--color-main-whiter) var(--color-dark);
+        color: var(--color-lighter);
+        will-change: transform;
+        /* Добавьте will-change */
     }
 
-    .header-menu__active::-webkit-scrollbar {
-        width: 3px;
-        /* ширина scrollbar */
-    }
 
-    .header-menu__active::-webkit-scrollbar-track {
-        background: var(--color-dark);
-        /* цвет дорожки */
-    }
-
-    .header-menu__active::-webkit-scrollbar-track::-webkit-scrollbar-thumb {
-        background-color: var(--color-main-whiter);
-        /* цвет плашки */
-        border-radius: 3px;
-        /* закругления плашки */
-    }
 
     .burger-block {
         display: flex;
@@ -654,7 +841,7 @@ ul.menu-items {
         /*для label бургера*/
         z-index: 4;
         position: var(--burger-position);
-        top: var(--burger-top);
+        top: calc(var(--burger-top) + 3px);
         transition: top 1s;
         /* border:1px solid var(--color-lighter); */
         background-color: var(--bg-color-main-menu);

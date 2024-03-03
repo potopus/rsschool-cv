@@ -35,7 +35,7 @@ window.addEventListener('scroll', async function () {
             // burgerBlock.style.setProperty('--burger-top', '20px');
         });
     } else if (burgerBlock.style.position !== 'static') {
-        console.log("position " + burgerBlock.style.position);
+        // console.log("position " + burgerBlock.style.position);
 
         burgerBlock.style.setProperty('--burger-position', 'static');
         burgerBlock.style.removeProperty('transition');
@@ -47,7 +47,7 @@ window.addEventListener('scroll', async function () {
 // burger
 
 let burgerIcon = document.querySelector("#check-menu");
-let menu = document.querySelector(".menu-items");
+let menu = document.querySelector(".menu-inner");
 let lebelBurger = document.querySelector(".label-burger");
 let isChanging = false;
 
@@ -57,12 +57,12 @@ burgerIcon.addEventListener('change', async () => {
         if (burgerIcon.checked) {
 
             if (mainMenu.getBoundingClientRect().top > 20) {
-                console.log(mainMenu.getBoundingClientRect().top);
+                // console.log(mainMenu.getBoundingClientRect().top);
 
                 document.documentElement.style.setProperty('--burger-top', mainMenu.getBoundingClientRect().top + "px");
 
                 // burgerBlock.style.top= mainMenu.getBoundingClientRect().top + "px";
-                await new Promise(resolve => requestAnimationFrame(resolve));
+                // await new Promise(resolve => requestAnimationFrame(resolve));
                 await new Promise(resolve => {
                     burgerBlock.classList.add("burger-block--position");
                     burgerBlock.style.setProperty('--burger-position', 'fixed');
@@ -71,11 +71,11 @@ burgerIcon.addEventListener('change', async () => {
                 // burgerBlock.classList.add("burger-block--position");
 
             }
-            menu.classList.add("menu-items__active");
+            menu.classList.add("menu-inner__active");
             document.body.classList.add("lock");
             document.documentElement.classList.add("lock");
         } else {
-            menu.classList.remove("menu-items__active");
+            menu.classList.remove("menu-inner__active");
             burgerBlock.classList.remove("burger-block--position");
             if (mainMenu.getBoundingClientRect().top > 20) {
                 setTimeout(() => {
@@ -91,7 +91,7 @@ burgerIcon.addEventListener('change', async () => {
 
 menu.addEventListener("click", function () {
     if (burgerIcon.checked) {
-        menu.classList.remove("menu-items__active");
+        menu.classList.remove("menu-inner__active");
         document.body.classList.remove("lock");
         document.documentElement.classList.remove("lock");
         burgerIcon.checked = false;
