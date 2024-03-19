@@ -230,6 +230,11 @@ ul.menu-items {
     font-size: clamp(12px, -2px + 2vi, 22px);
 }
 
+.dascription-contact span{
+    color: #d83038;
+    font-weight: 800;
+}
+
 /* .box-contact-email--fontsize{
     font-size: calc(12px + (20 - 14) * (100vw - 700px) / (1200 - 700));
 } */
@@ -504,6 +509,9 @@ ul.menu-items {
     border-radius: var(--element-radius);
     overflow: hidden;
     padding: 10px;
+    display: flex;
+    flex-direction: column;
+    height: auto;
 
 }
 
@@ -526,7 +534,19 @@ ul.menu-items {
 
 }
 
+.portfolio-item__content{
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: auto auto auto auto 1fr;
+    /* flex-direction: column; */
+    height: 100%;
+    max-height: 100%;
+}
 
+.portfolio-item__links{
+    flex: 1;
+    align-self: end;
+}
 .portfolio-item__curtain {
     display: none;
     position: absolute;
